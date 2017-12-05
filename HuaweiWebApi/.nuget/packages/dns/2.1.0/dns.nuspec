@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>DNS</id>
+    <version>2.1.0</version>
+    <authors>Mirza Kapetanovic</authors>
+    <owners>Mirza Kapetanovic</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/kapetan/dns</projectUrl>
+    <description>Library for parsing and serializing DNS messages. Includes a basic DNS client and server.</description>
+    <tags>dns request response client server</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.5">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

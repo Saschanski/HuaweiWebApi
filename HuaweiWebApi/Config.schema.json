@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ApplicationConfiguration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "FirmwareSettings": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/definitions/FirmwareSettings"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "FirmwareSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "FirmwareName": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "FirmwareVersion": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "FirmwareLink": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    }
+  }
+}
