@@ -58,6 +58,8 @@ For Windows 7 or higher I'll describe it here.
 
 ----------
 
+For this you need the Application run on a different PC or in a virtual machine since the Virtual Wifi connection sharing uses port 53 wich is already in use by the DNS server.
+
 Open up a CMD and enter following commands
 
     netsh wlan set hostednetwork mode=allow ssid="Huawei Recovery Service" key=password123 keyUsage=persistent
