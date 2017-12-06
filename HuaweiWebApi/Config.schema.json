@@ -13,6 +13,12 @@
           "$ref": "#/definitions/FirmwareSettings"
         }
       ]
+    },
+    "RedirectIP": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
   },
   "definitions": {

@@ -1,6 +1,7 @@
 ﻿using System;
 using HuaweiWebApi.Misc;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Hosting;
 
 namespace HuaweiWebApi
@@ -14,6 +15,8 @@ namespace HuaweiWebApi
             LoadConfig();
 
             JsonApplicationConfiguration.Save("Config", Configuration, false);
+
+            Console.WriteLine($"Redirecting to: {Program.Configuration.RedirectIP}");
 
             Server.MainAsync();
             BuildWebHost(args).Run();

@@ -5,8 +5,12 @@
         public ApplicationConfiguration()
         {
             FirmwareSettings = new FirmwareSettings();
+            RedirectIP = "192.168.178.20";
+
         }
         public FirmwareSettings FirmwareSettings { get; set; }
+        public string RedirectIP { get; set; } = "192.168.178.20";
+
     }
 
     public class FirmwareSettings

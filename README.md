@@ -32,13 +32,16 @@ It will look like this:
         "FirmwareName": "PRA-LX1C432B110",
         "FirmwareVersion": "PRA-LX1C432B110",
         "FirmwareLink": "http://update.hicloud.com:8180/TDS/data/files/p3/s15/G1458/g104/v76120/f1/"
-      }
+      },
+	  "RedirectIP": "192.168.178.20"
     }
     
 You can get the FirmwareLink for your phone at the website of pro-teammt:
 http://pro-teammt.ru/firmware-database/
 
 FirmwareName & FirmwareVersion are actually not important. You can put whatever in. Just make sure the link is like above.
+
+The RedirectIP tho **IS** important. Make sure it matches your desired endpoint else the redirects wont reach the WebApi.
 
 If your phone is currently soft bricked you should get a **FullOTA-MF** variant for a complete restore.
 
